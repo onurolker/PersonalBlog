@@ -1,0 +1,79 @@
+﻿/*navbar*/
+.navbar {
+    background-color: #313131
+}
+
+.headline-title {
+    color: white;
+    background-color: green;
+}
+
+.owl-nav > button {
+    background-color: #313131;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.carousel-item a{
+    color:white;
+    text-decoration:none
+}
+.logo {
+    margin-top: 20px;
+}
+.header-slogan-text {
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    color: #313131;
+    font-family: 'PT Serif', serif;
+    position:relative;
+    font-size: 14px;
+    vertical-align:top;
+    text-align:center;
+}
+
+.widget-title {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+}
+.widget-title span {
+    position: absolute;
+    top: 13px;
+    background: #F3F5F6;
+    left: 36%;
+    padding: 0 1%;
+}
+.about-me-heading {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+}
+
+    .about-me-heading span {
+        position: absolute;
+        top: 13px;
+        background: #F3F5F6;
+        left: 36%;
+        padding: 0 1%;
+    }
+
+#widget-paragraf{
+    display: block;
+    text-align:center
+}
+.social-media {
+    text-align: center
+}
+
+.widget-social{
+    display:table-cell;
+    float:none;
+}

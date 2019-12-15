@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width" />
+    <link href="~/Content/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/BlogStyleSheet.css" rel="stylesheet" />
+    <script src="~/Content/lib/jQuery/jquery.3.4.1.js"></script>
+    <script src="~/Content/js/BlogJavaScript.js"></script>
+    <script src="~/Content/lib/jQuery/popper.js"></script>
+    @RenderSection("customStyle", false) ;
+    <title>@ViewBag.Title</title>
+
+</head>
+<body>
+
+    @Html.Partial("_NavBarTop");
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="LogoAndSocial col-md-6 offset-md-3 ">
+            <div id="logo">
+                <h1>
+                    <a href=".."><img src="https://ceyhunozdemir.com/wp-content/uploads/2018/05/ceyhun-ozdemir.png" alt="ONUR ÖLKER | Kişisel Blog"></a>
+                </h1>
+            </div>
+            <div class="header-slogan">
+                <h2 class="header-slogan-text">herkesten ve her şeyden öte, <br>yolunun yolcusu...</h2>
+            </div>
+
+            <div class="header-social">
+                <div class="inner-header-social">
+                    <a href="https://twitter.com/ceyhundiyorlar" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ceyhunozdemir/" rel="nofollow" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Html.Partial("_NavBar");
+    @*content*@
+    <div class="container">
+
+        <div class="row justify-content-md-end">
+
+            <!-- Blog Entries Column -->
+            
+
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-4">
+
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <h4 class="widget-title penci-border-arrow"><span class="inner-arrow">Hakkımda</span></h4>
+                    </li>
+                </ul>
+                <ul class="nav flex-column mb-2 ">
+                    <li class="nav-item">
+                        <img class="penci-widget-about-image nopin holder-square" nopin="nopin" src="https://ceyhunozdemir.com/wp-content/uploads/2018/05/Siyah-beyaz-e1527696215656.jpg" alt="Hakkımda" style="border-radius: 50%; -webkit-border-radius: 50%;">
+                    </li>
+                </ul>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <h2 class="about-me-heading"><span class="inner-arrow">Onur</span></h2>
+                    </li>
+                </ul>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <p id="widget-paragraf">
+                            Minimal yaşamı benimsemiş, hayvanları oldukça seven, edebiyata ve doğu bilgeliğine sevdalanmış birisiyim. Ayrıca vakur, zarif, naif ve mütevazi insanların hayranıyım. Kendimce bu hayatı yaşıyorum ve öğrendiklerimi de dilim döndüğünce burada yazıyorum. Kısık ve buğulu bir sesle; merhaba! :)
+                            <br>
+                            <br>
+                            iletisim onur_olker@hotmail.com
+                        </p>
+                    </li>
+                </ul>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <h3 class="social-media"><span class="inner-arrow">Sosyal Medya</span></h3>
+                    </li>
+                </ul>
+                <ul class="nav flex-column mb-2">
+                    <li class="nav-item">
+                        <div class="widget-social pc_aligncenter show-text">
+                            <a href="https://twitter.com/ceyhundiyorlar" rel="nofollow" target="_blank"><i class="fa fa-twitter" style="font-size: 14px"></i><span style="font-size: 13px">Twitter</span></a>
+                            <a href="https://www.instagram.com/ceyhunozdemir/" rel="nofollow" target="_blank"><i class="fa fa-instagram" style="font-size: 14px"></i><span style="font-size: 13px">Instagram</span></a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    @*content*@
+    @*<div class="sidebar-sticky col-md-4 offset-8">
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <h4 class="widget-title penci-border-arrow"><span class="inner-arrow">------------Hakkımda------------</span></h4>
+            </li>
+        </ul>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <img class="penci-widget-about-image nopin holder-square" nopin="nopin" src="https://ceyhunozdemir.com/wp-content/uploads/2018/05/Siyah-beyaz-e1527696215656.jpg" alt="Hakkımda" style="border-radius: 50%; -webkit-border-radius: 50%;">
+            </li>
+        </ul>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <h2 class="about-me-heading">------------onur------------</h2>
+            </li>
+        </ul>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <p>
+                    Minimal yaşamı benimsemiş, hayvanları oldukça seven, edebiyata ve doğu bilgeliğine sevdalanmış birisiyim. Ayrıca vakur, zarif, naif ve mütevazi insanların hayranıyım. Kendimce bu hayatı yaşıyorum ve öğrendiklerimi de dilim döndüğünce burada yazıyorum. Kısık ve buğulu bir sesle; merhaba! :)
+                    <br>
+                    <br>
+                    iletisim onur_olker@hotmail.com
+                </p>
+            </li>
+        </ul>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <span class="inner-arrow">Sosyal Medya</span>
+            </li>
+        </ul>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <div class="widget-social pc_aligncenter show-text">
+                    <a href="https://twitter.com/ceyhundiyorlar" rel="nofollow" target="_blank"><i class="fa fa-twitter" style="font-size: 14px"></i><span style="font-size: 13px">Twitter</span></a>
+                    <a href="https://www.instagram.com/ceyhunozdemir/" rel="nofollow" target="_blank"><i class="fa fa-instagram" style="font-size: 14px"></i><span style="font-size: 13px">Instagram</span></a>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>*@
+
+    <div>
+
+        @RenderBody()
+    </div>
+    @Html.Partial("_FooterSubscribe");
+    @Html.Partial("_FooterSocial");
+    @Html.Partial("_FooterCopyright");
+    <script src="~/Content/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/Content/lib/jQuery/jquery-3.3.1.js"></script>
+    @RenderSection("customScript", false);
+</body>
+</html>
